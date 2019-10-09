@@ -1,0 +1,12 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9001/uaa/user/current
+      token-info-uri: http://localhost:9001/uaa/oauth/check_token
